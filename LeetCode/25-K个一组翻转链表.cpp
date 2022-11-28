@@ -40,11 +40,6 @@ public:
             reverseList(head, next_group_head);
             last->next = end;
 
-            cout << "一组反转后head: " << head->val << endl;
-            cout << "一组反转后end: " << end->val << endl;
-            cout << "new_group_head: " << next_group_head->val << endl;
-            cout << "*************************" << endl;
-
             head->next = next_group_head;
             last = head;
             head = next_group_head;
@@ -81,8 +76,6 @@ public:
             left = head;
             head = right;
         }
-
-        cout << "函数内head: " << head->val << endl;
 
         return left;
     }
